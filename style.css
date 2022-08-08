@@ -1,13 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-}
-
+header .navbar {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  header .navbar .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  header .navbar .logo {
+    width: 25%;
+  }
+  header .navbar .menu .item {
+    color: #1B1A17;
+  }
+  @media screen and (max-width: 490px) {
+    header .navbar {
+      font-size: 15px;
+    }
+  }
+  
+  body {
+    background-color: #1A1A40;
+  }
 
 /*===================MENU==========================*/
 
+.boton-whatsapp {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    z-index: 999;
+  }
  #menu a, button{
      font-size: 18px !important;
      font-weight: 600;
