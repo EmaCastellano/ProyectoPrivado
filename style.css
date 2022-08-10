@@ -1,229 +1,286 @@
+#Programacion {
+  color: white;
+  text-align: center;
+  padding: 50px;
+  font-size: xx-large;
+}
+
+#Programacion img {
+width: 50px;
+height: 50px;
+}
+#Contacto {
+  font-size: 30px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#Contacto img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 490px) {
+  #Contacto {
+    font-size: 15px;
+  }
+}
+
+.iframe {
+  padding: 40px;
+  display: flex;
+  justify-content: right;
+}
+@media screen and (max-width: 490px) {
+  .iframe iframe {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.redes {
+  background-color: #FA58B6;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.redes .transicion {
+  transition: all 1s;
+}
+.redes .transicion:hover {
+  transform: scale(2);
+}
+.redes .transicion img {
+  height: 50px;
+  width: 50px;
+}
+
+.disclaimer {
+  display: none;
+}
 
 header .navbar {
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  display: flex;
+  font-family: monospace;
+}
+header .navbar .fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+header .navbar .logo {
+  width: 25%;
+}
+header .navbar .menu .item {
+  color: #002244;
+}
+@media screen and (max-width: 490px) {
+  header .navbar {
+    font-size: 15px;
   }
-  header .navbar .fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-  }
-  header .navbar .logo {
-    width: 25%;
-  }
-  header .navbar .menu .item {
-    color: #1B1A17;
-  }
-  @media screen and (max-width: 490px) {
-    header .navbar {
-      font-size: 15px;
-    }
-  }
-  
-  body {
-    background-color: #1A1A40;
-  }
+}
 
-/*===================MENU==========================*/
+body {
+  background-color: #002244;
+}
 
 .boton-whatsapp {
-    display: block;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    border-radius: 50%;
-    line-height: 70px;
-    text-align: center;
-    z-index: 999;
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 70px;
+  text-align: center;
+  z-index: 999;
+}
+
+.nosotros-h1 {
+  margin-top: 15%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: #FA58B6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation: heartBeat;
+  animation-duration: 2s;
+}
+@media screen and (max-width: 490px) {
+  .nosotros-h1 {
+    margin-top: 30%;
+    font-size: 30px;
   }
- #menu a, button{
-     font-size: 18px !important;
-     font-weight: 600;
-    
- }
-
- #menu a{
-     color:#3f3f3f;
-     
- }
-/*===================SLIDER DE IMAGENES==========================*/
-
-.carousel-inner {
-    max-height:39rem !important;
 }
 
-/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
-
-
-
-#img-equipo{
-    max-height:30rem !important;
-    width:50%;
+.nosotros {
+  text-align: center;
+  margin-top: 5%;
+  color: white;
+  font-style: oblique;
+  font-size: 25px;
+  font-family: monospace;
+  padding: 70px;
 }
-
-
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
-#local {
-    margin-top:50px;
-    background-color: #f3f3f3;
-    display:flex;
-    justify-content: center; 
-    padding-bottom: 300px; 
-}
-
-.mapa {
-    background: url(../img/mapa.png);
-    width:100%;
-    height:500px;
-}
-
-
-.wrapper-local {
-    width:50%;
-    margin-left:100px;
-    padding-top:150px;
-}
-
-
-/*===========================SECCION EQUIPO MIAMI==================================*/
-#numeros-local{
-    margin:0 !important;
-    padding:0 !important;
-}
-#numeros-local div {
-    padding: 0 20px 0 0;   
-    text-align:left;
-    height:48px;
-}
-
-#numeros-local div:not(:last-child) {
-    border-right: 2px solid #3f3f3f;
+@media screen and (max-width: 490px) {
+  .nosotros {
+    font-size: 15px;
+    margin-top: 2%;
   }
-#numeros-local div:not(:first-child) {
-    padding-left:20px;
+}
+
+h2 {
+  margin-bottom: 50px;
+  margin-top: 20%;
+  text-align: left;
+  font-size: 30px;
+  text-decoration: underline;
+  color: #FA58B6;
+  /* background-color: #3330E4; */
+  font-family: fantasy;
+}
+@media screen and (max-width: 490px) {
+  h2 {
+    margin-bottom: 25px;
+    margin-top: 10%;
+    font-size: 30px;
   }
-
-#numeros-local p{
-    margin:0;
 }
 
-/*=========================CONTACTOS BACKGROUND================================*/
-
-#bg-contactos{
-    position:relative;
-    top: -130px;
-} 
-
- #seccion-contacto{
-    background-color: #1b2a4e;
-    min-height:500px;
-    position:relative;
+h4 {
+  margin-bottom: 50px;
+  margin-top: 20%;
+  text-align: left;
+  font-size: 30px;
+  text-decoration-line: underline;
+  color: #FA58B6;
+  background-color: #270082;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 490px) {
+  h4 {
+    margin-bottom: 25px;
+    margin-top: 10%;
+    font-size: 20px;
+  }
 }
 
-/*=========================CONTACTOS FORMULARIO================================*/
-
-#contenedor-formulario{
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background: #fbfafa;
-    border-radius:5px;
-    
+.servicios1 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-style: italic;
+  text-align: left;
+  border: 10px outset #7A0BC0;
+  padding: 100px;
+}
+@media screen and (max-width: 490px) {
+  .servicios1 {
+    padding: 25px;
+    font-size: 15px;
+  }
 }
 
-#titulo-formulario {
-    color: #3f3f3f;
+#Precios {
+  font-size: 30px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media screen and (max-width: 490px) {
+  #Precios {
+    font-size: 15px;
+    margin-top: 50px;
+  }
 }
 
-
-
-
-/*=========================FOOTER================================*/
-
-footer {
-    background: #1b2a4e;
-    min-height: 100px;;
+.precios-lista {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+  text-decoration: underline;
 }
-footer p{
-    color:#f3f3f3;
-    text-align:center;
-}
-#iconos  i {
-    font-size: 26px;
-    padding: 0 8px;
-    color:#f3f3f3;
+@media screen and (max-width: 490px) {
+  .precios-lista {
+    font-size: 15px;
+    margin-top: 50px;
+  }
 }
 
-/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
-
-@media (max-width:1200px){
-    #intro, #equipo {
-        width:90% !important;
-        margin:auto;
-    }
-  
-    #local {
-        flex-wrap: wrap;
-        padding-top:30px;
-   }
-   .wrapper-local {
-    width:90%;
-    margin:auto;
-    padding-top:50px;    
-   }
- 
+/*MEDIOS DE PAGO*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  font-size: smaller;
+  font-family: "Times New Roman", Times, serif;
 }
-/*=========================MEDIA QUERIES PANTALLA SM================================*/
-
-
-@media (max-width:768px) {
-
-    #intro, #equipo{
-        width:90% !important;
-        margin:auto;
-    }
-
-    
-    #img-equipo{
-        max-height:20rem !important;
-        width:90%;
-    }
-    .wrapper-local {
-        width:90%;
-        margin:auto;
-        padding-top:50px;    
-    }
-    #local {
-        flex-wrap: wrap;
-    }
-    .mapa img {
-        width:100%;
-        height:auto;
-    }
-    #bg-contactos{
-        top: -120px;
-    }
-
-
+.parent .div1 {
+  grid-area: 1/1/2/4;
+  display: flex;
+  justify-content: center;
 }
-/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
-
-@media (max-width: 576px) {
-    #servicios-fila-2 {
-        width:100% !important;
-    }
-    #servicios-fila-1 {
-        width:100% !important;
-    }
-
-    .icono-wrap{
-        flex-wrap:wrap !important;
-        justify-content: center !important;
-        text-align: center;
-    }
+.parent .div2 {
+  grid-area: 2/1/3/2;
 }
+.parent .div3 {
+  grid-area: 2/2/3/3;
+}
+.parent .div4 {
+  grid-area: 2/3/3/4;
+}
+.parent .div2, .parent .div3, .parent .div4 {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+}
+@media screen and (max-width: 490px) {
+  .parent .div2, .parent .div3, .parent .div4 {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+  }
+}
+
+.unidades3 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-style: italic;
+  text-align: left;
+  border: 10px outset #7A0BC0;
+  padding: 100px;
+}
+@media screen and (max-width: 490px) {
+  .unidades3 {
+    padding: 25px;
+    font-size: 15px;
+  }
+}
+
+.nosotros {
+  color: white;
+}
+
+.h2 {
+  color: white;
+}
+
+.unidades1 {
+  color: white;
+}
+
+.unidades2 {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
